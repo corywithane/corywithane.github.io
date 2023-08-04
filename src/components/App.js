@@ -72,6 +72,21 @@ function App() {
         setIsMobile(!isMobile);
     };
 
+    useEffect(() => {
+      // define a custom handler function for the contextmenu event
+      const handleContextMenu = (e) => {
+        // prevent the right-click menu from appearing
+        e.preventDefault()
+      }
+      // attach event listener to the document object
+      document.addEventListener("contextmenu", handleContextMenu)
+
+      // clean up the event listener when the component unmounts
+      return () => {
+        document.removeEventListener("contextmenu", handleContextMenu)
+      }
+    },[])
+
   return (
     <div className="App">
       {/* Pass darkMode and toggleDarkMode as props to NavBar */}
@@ -82,7 +97,9 @@ function App() {
           mobileMenuToggle={mobileMenuToggle}
         />
       {/* Pass darkMode as props to Welcome */}
-        <Welcome darkMode={darkMode}/>
+        <Welcome darkMode={darkMode}
+                  isMobile={isMobile}
+        />
         <About darkMode={darkMode}/>
         <Projects isMobile={isMobile} 
         />

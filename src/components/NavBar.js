@@ -6,18 +6,29 @@ import dark from '../assets/moon.svg';
 import light from '../assets/sun.svg';
 
 //
-// NavBar Component:  Fixed to top of page; Hamburger menu activates when isMobile is true.  
-//                    Dark mode toggle switches to center of screen and hamburger menu moves 
-//                    to the right corner.
-// Props: isMobile, mobileToggle, darkMode and toggleDarkMode  
-// Includes: Displays Logo in top left corner , Links to page sections in the center and Dark mode Toggle top right corner.
-//
+// NavBar Component: This is a React component representing the navigation bar of the website. It is fixed to the top of the page and includes various elements based on the props provided.
+// Props: 
+// - darkMode: A boolean prop used to determine whether the website is in dark mode or light mode.
+// - toggleDarkMode: A function prop to handle the toggling of dark mode.
+// - isMobile: A boolean prop that determines whether the component is being rendered on a mobile device or not.
+// - mobileMenuToggle: A function prop used to toggle the mobile menu when on mobile devices.
+
+// The navigation bar includes the following elements:
+// 1. Logo: A logo (CB icon) displayed in the top left corner. The logo changes color based on the darkMode prop.
+// 2. Navigation Links: Links to different sections of the page (HOME, ABOUT, PROJECTS). The links scroll smoothly to the corresponding sections. On mobile devices, the navigation links are hidden by default and revealed when the hamburger menu is clicked.
+// 3. Dark Mode Toggle: A toggle button represented by a sun/moon icon that switches between light and dark mode. The toggle button is positioned at the top right corner of the navigation bar. The button and background change color based on the darkMode prop.
+// 4. Hamburger Menu: A button that activates the mobile menu when clicked on mobile devices. It displays three horizontal bars when the mobile menu is closed and two bars when the mobile menu is open.
+
+// The component uses TailwindCSS utility classes to style the layout and appearance of the elements.
+
+// Note: The component receives props to handle dark mode, mobile menu behavior, and other visual aspects of the navigation bar.
+
 const NavBar = ({darkMode, toggleDarkMode, isMobile, mobileMenuToggle}) => {
     return (
-        <nav className="navbar fixed top-0 left-0 right-0 text-2xl flex items-center justify-between p-4 bg-dark-lime text-black dark:text-light-gray dark:bg-charcoal z-10">
+        <nav className="navbar fixed top-0 left-0 right-0 text-2xl flex items-center justify-between p-2 bg-dark-lime text-black dark:text-light-gray dark:bg-charcoal z-10">
             <div className="flex items-center">
                 {darkMode ? (
-                    <img src={CBWhite} alt="CB" className="h-11 w-11" />
+                    <img src={CBWhite} alt="CB" className=" h-11 w-11" />
                 ) : (
                     <img src={CBBlack} alt="CB" className="h-11 w-11" />
                 )}
