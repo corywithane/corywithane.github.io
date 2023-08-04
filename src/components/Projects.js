@@ -20,7 +20,7 @@ import { projects } from "../data/data.js";
 const Projects = ({isMobile}) => {
     return (
         <section className="text-light-gray bg-charcoal dark:bg-light-gray font-sans">
-            <div className="container px-5 py-10 mx-auto text-center  flex flex-col justify-between">
+            <div className="container px-5 py-10 mx-auto text-center flex flex-col justify-between">
                 <div className="flex flex-col w-full">
                     <h1 className="text-6xl title-font font-sans mb-16 text-white font-bold dark:text-black">
                     Projects I've Built
@@ -29,7 +29,7 @@ const Projects = ({isMobile}) => {
                     School and personal projects I have built using various languages and tech stacks.
                     </p>
                 </div>
-                <div id="projects" className="flex flex-wrap justify-evenly -m-2 p-8">
+                <div id="projects" className="flex flex-wrap cursor-default justify-evenly -m-2 p-8">
                     {projects.map((project) => (
                         <a href={isMobile ? project.link : null} key={project.image} className="sm:w-1/2 w-full p-6">
                             <div className="flex relative">

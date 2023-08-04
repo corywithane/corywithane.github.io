@@ -1,5 +1,6 @@
 import Wordle from '../assets/wordle.jpg';
 import Rreact from '../assets/react.jpg';
+import Portfolio from '../assets/portfolio.png';
 import Swift from '../assets/swift.jpg';
 import Isla from '../assets/game.png';
 
@@ -44,13 +45,12 @@ export const projects = [
     link: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/",
     credit: "Photo by Maxim Hopman"
 },
-//     {
-//     id: 4,
-//     title: "Portfolio Website",
-//     subtitle: "React, TailwindCSS, and GitHub",
-//     description:
-//     "The game, built with React, AWS Gateway API, and NoSQL, presents players with a grid of letters to form words.  Responsive UI, scalable backend, and fast NoSQL storage offer an engaging gaming experience.",    
-//     image: wordle,
-//     link: "https://www.nytimes.com/games/wordle/index.html",
-// },
+    {
+    id: 4,
+    title: "Portfolio Website",
+    subtitle: "React, TailwindCSS, and GitHub",
+    description: "Simple portfolio site",
+    image: Portfolio,
+    link: "https://www.nytimes.com/games/wordle/index.html",
+},
 ];
