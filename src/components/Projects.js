@@ -19,8 +19,8 @@ import { projects } from "../data/data.js";
 
 const Projects = ({isMobile}) => {
     return (
-        <section className="text-light-gray bg-charcoal dark:bg-light-gray font-sans">
-            <div className="container px-5 py-10 mx-auto text-center flex flex-col justify-between">
+        <div className="projects-container text-light-gray bg-charcoal dark:bg-light-gray font-sans">
+            <div className="container px-5 py-10  mx-auto text-center flex flex-col justify-between">
                 <div className="flex flex-col w-full">
                     <h1 className="text-6xl title-font font-sans mb-16 text-white font-bold dark:text-black">
                     Projects I've Built
@@ -52,7 +52,7 @@ const Projects = ({isMobile}) => {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 export default Projects;

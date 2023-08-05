@@ -18,7 +18,7 @@ const Welcome = ({ darkMode, isMobile }) => {
         <div id="welcome" className={darkMode ? "dark-mode" : "light-mode"}>
             <div className="welcome-container font-sans flex items-center h-screen w-screen">
                 <div className="welcome-color-block sm:w-full lg:w-1/2 h-full bg-light-lime dark:bg-gradient-to-b from-charcoal to-dark-charcoal flex flex-col justify-center items-center">
-                    <h1 className="welcome-text text-shadow font-extrabold p-6 m-8 mt-12 text-charcoal dark:text-white">
+                    <h1 className="welcome-text text-shadow font-extrabold p-4 m-2 text-charcoal dark:text-white">
                         Welcome. Bienvenue.
                     </h1>
                     <p className='acknowledgement text-2xl m-8 p-4 dark:text-light-gray'>
