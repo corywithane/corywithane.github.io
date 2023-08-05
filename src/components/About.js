@@ -24,10 +24,10 @@ const About = () => {
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-charcoal">
                 Welcome, my name is Corey.
-                <br className="hidden lg:inline-block" />I really love developing and building new projects.
+                <br className="hidden lg:inline-block" />  I really love developing and building new projects.
                 </h1>
                 <p className="mb-8 leading-relaxed">
-                    I am a dedicated husband and father to a beautiful three-year-old daughter.  
+                    I am a dedicated husband and father to a beautiful three-year-old daughter.   
                     I am currently a full-time student with a passion for software development, cybersecurity
                     and systems administration.  With a focus on developing my skills as a full stack developer, 
                     I have discovered an interest in cloud computing and web applications.  As a former aviation  
