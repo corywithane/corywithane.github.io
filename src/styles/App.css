@@ -6,8 +6,6 @@
   font-size: calc(10px + 2vmin);
 }
 .Navbar {
-  border-bottom: #C4EB00;
-  border-bottom-width: 100vw;
   z-index: 5;
 }
 .welcome {
@@ -20,5 +18,4 @@
 }
 .projects {
   height: 100vh;
-  width: 100vw;
 }
